@@ -11,7 +11,11 @@ function main(currentTime)
 {
     if (gameOver)
     {
-        return alert('you lose')
+        if (confirm('You lost. Press OK to restart.'))
+        {
+            window.location = '/'
+        }
+        return
     }
     window.requestAnimationFrame(main)
     if ((currentTime - lastRender) / 1000 < 1 / SNAKE_SPEED) return

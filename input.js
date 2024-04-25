@@ -1,4 +1,4 @@
-let inputDirection = {x: 0, y: 1}
+let inputDirection = {x: 0, y: -1}
 let lastInputDirection = inputDirection
 
 window.addEventListener('keydown', e =>{
