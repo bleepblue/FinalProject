@@ -22,23 +22,23 @@
             height: 100vmin;
             background-color: #CCC;
             display: grid;
-            grid-template-rows: (21, 1fr);
-            grid-template-columns: (21, 1fr);
+            grid-template-rows: repeat(21, 1fr);
+            grid-template-columns: repeat(21, 1fr);
         }
 
-        #snake
+        .snake
         {
             background-color: blue;
             border: 0.25vmin solid black;
         }
 
-        #food
+        .food
         {
             background-color: yellow;
             border: 0.24vmin solid black;
         }
     </style>
-    <script src="game.js" defer type="module"></script>
+    <script src="game.js" type="module" defer></script>
 </head>
 <body>
     <div id="game-board"></div>
